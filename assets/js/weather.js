@@ -2,7 +2,7 @@
 // │││├┤ ├─┤ │ ├─┤├┤ ├┬┘
 // └┴┘└─┘┴ ┴ ┴ ┴ ┴└─┘┴└─
 // Functions to setup Weather widget.
-
+/*
 const iconElement = document.querySelector('.weatherIcon');
 const tempElement = document.querySelector('.weatherValue p');
 const descElement = document.querySelector('.weatherDescription p');
@@ -60,3 +60,5 @@ function displayWeather() {
 	tempElement.innerHTML = `${weather.temperature.value.toFixed(0)}°<span class="darkfg">${tempUnit}</span>`;
 	descElement.innerHTML = weather.description;
 }
+
+*/

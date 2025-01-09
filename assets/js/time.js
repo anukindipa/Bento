@@ -6,10 +6,12 @@
 window.onload = displayClock();
 function displayClock() {
 	const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+	const weekNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday','Thursday','Friday','Saturday']
 
 	var d = new Date();
 	var mm = monthNames[d.getMonth()];
 	var dd = d.getDate();
+	var ddd = weekNames[d.getDay()];
 	var min = (mins = ('0' + d.getMinutes()).slice(-2));
 	var hh = d.getHours();
 	var ampm = '';
@@ -26,6 +28,7 @@ function displayClock() {
 
 	document.getElementById('month').innerText = mm;
 	document.getElementById('day').innerText = dd;
+	document.getElementById('dayofweek').innerText = ddd;
 
 	setTimeout(displayClock, 1000);
 }
